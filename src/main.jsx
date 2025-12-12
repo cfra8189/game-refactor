@@ -12,7 +12,9 @@ const router = createBrowserRouter([
   { path: "/about", element: <About /> },
   { path: "/contact", element: <Contact /> },
   { path: "/shop", element: <Shop /> },
-]);
+], {
+  basename: "/game-refactor"
+});
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
